@@ -6,11 +6,11 @@ import string
 
 # no plurals in OG
 
-desired_letters = "de"
+desired_letters = "eign"
 desired_length = 5
-excluded_letters = "aiughost"
+excluded_letters = "hostapplyr"
 known = {}  # : "e"}  # 2:"i"}
-knownnot = {"d":[1], "e":[3]}
+knownnot = {"g":[0,3], "n":[4]}
 
 
 def pos(word, known):
@@ -37,7 +37,7 @@ def notcontains(word, letters):
 
 
 def unique_letters(word):
-    return True or len(word) == len(set(word))
+    return len(word) == len(set(word))
 
 
 def get_matches():
