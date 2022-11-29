@@ -6,11 +6,11 @@ import string
 
 # no plurals in OG
 
-desired_letters = "eign"
+desired_letters = "lokc"
 desired_length = 5
-excluded_letters = "hostapplyr"
-known = {}  # : "e"}  # 2:"i"}
-knownnot = {"g":[0,3], "n":[4]}
+excluded_letters = "brane"
+known = {1:"l", 2:"o", 3:"c", 4:"k"}  # : "e"}  # 2:"i"}
+knownnot = {"c":[0], "b":[0]}
 
 
 def pos(word, known):
